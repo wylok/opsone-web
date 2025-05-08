@@ -422,24 +422,10 @@ export function getK8sOverview(params) {
     params: params
   })
 }
-export function getK8sAlarm(params) {
-  return request({
-    url: base_url + '/cluster/alarm',
-    method: 'get',
-    params: params
-  })
-}
 export function putK8sCluster(data) {
   return request({
     url: base_url + '/cluster',
     method: 'put',
-    data
-  })
-}
-export function delK8sAlarm(data) {
-  return request({
-    url: base_url + '/cluster/alarm',
-    method: 'delete',
     data
   })
 }
