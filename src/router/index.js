@@ -302,12 +302,6 @@ export const constantRoutes = [
         meta: { title: '集群列表', icon: 'el-icon-files' }
       },
       {
-        path: 'cluster/alarm',
-        name: 'cluster_alarm',
-        component: () => import('@/views/k8s/cluster_alarm'),
-        meta: { title: '集群报警', icon: 'el-icon-bell' }
-      },
-      {
         path: 'nodes/:k8s_id/:k8s_name',
         name: 'nodes',
         component: () => import('@/views/k8s/nodes'),
