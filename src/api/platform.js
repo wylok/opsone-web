@@ -42,27 +42,3 @@ export function deleteAgentAlive(data) {
     data: data
   })
 }
-
-export function getSshAudit(params) {
-  return request({
-    url: base_url + '/ssh_audit',
-    method: 'get',
-    params
-  })
-}
-
-export function getSshContent(params) {
-  return request({
-    url: base_url + '/ssh_audit/content',
-    method: 'get',
-    params
-  })
-}
-
-export function deleteSshAudit(data) {
-  return request({
-    url: base_url + '/ssh_audit',
-    method: 'delete',
-    data: data
-  })
-}
